@@ -43,3 +43,6 @@ class Map:
         self.tiles = []
         self.lines = lines
         self.columns = columns
+
+    def add_tile(self, tile):
+        self.tiles.append(tile)
