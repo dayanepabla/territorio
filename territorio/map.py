@@ -8,16 +8,16 @@ class Tile:
     @property
     def neighbors(self):
         neighbors = []
-        for tile in self.maps.tiles
+        for tile in self.maps.tiles:
             if self._is_neighbor_up(tile) or self._is_neighbor_down(tile) or \
             self._is_neighbor_left(tile) or self._is_neighbor_right(tile):
-            neighbors.append(tile)
+                neighbors.append(tile)
 
         return neighbors
 
     def is_coast(self):
-        for tile in neighbors
-            if tile.is_ocean()
+        for tile in neighbors:
+            if tile.is_ocean():
                 return True
 
     def is_ocean(self):
