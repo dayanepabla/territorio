@@ -3,7 +3,6 @@ from map import Map, Tile
 def main():
   m = input('M: ')
   n = input('N: ')
-  coasts = 0
   map = Map(m, n)
 
   for i in range(m):
@@ -16,8 +15,6 @@ def main():
 
       map.add_tile(tile)
 
-  for tile in map.tiles:
-    if tile.is_coast():
-      coasts += 1
 
-  print coasts
+  print map.count_coast()
+
